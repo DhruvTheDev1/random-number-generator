@@ -1,4 +1,5 @@
 **Simple Random Number Generator**
+
 This is a simple console-based application that generates a 'random number' based on the users input.
 It asks the user for a lower-bound and an upper-bound and then generates a number based on those values (inclusive).
 
