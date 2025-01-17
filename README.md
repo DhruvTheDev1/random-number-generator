@@ -1,18 +1,15 @@
-## Getting Started
+**Simple Random Number Generator**
+This is a simple console-based application that generates a 'random number' based on the users input.
+It asks the user for a lower-bound and an upper-bound and then generates a number based on those values (inclusive).
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Features:
+- Asks user for two inputs: Lower-bound and Upper-bound
+- Generates and displays a 'randomly generated number' betweem those values.
 
-## Folder Structure
+Further Work:
+- This project is planned to be enhanced and refactored using Spring Boot.
+- Will transition from a console-based application to a web application, allowing users to enter the lower/upper bound via a web interface.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Note (extra information):
+- Java Random Class is not completely random at all -> It generate pseudo-random numbers.
+- It generates sequences in a perfectly predictable way from the seed.
