@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+  <form action="#" th:action="@{/}" th:object="${randomNumber}" method="post">
+    <table>
+      <tr>
+        <td>Min:</td>
+        <td><input type="text" th:field="*{min}" /></td>
+        <td th:if="${#fields.hasErrors('min')}" th:errors="*{min}">Min Error</td>
+      </tr>
+      <tr>
+        <td>Max:</td>
+        <td><input type="text" th:field="*{max}" /></td>
+        <td th:if="${#fields.hasErrors('max')}" th:errors="*{max}">Max Error</td>
+      </tr>
+      <tr>
+        <td><button type="submit">Generate</button></td>
+      </tr>
+
+      <p th:if="${randomNum}">Generated Number: <span th:text="${randomNum}"></span></p>
+
+    </table>
+  </form>
+</body>
+
+</html>
